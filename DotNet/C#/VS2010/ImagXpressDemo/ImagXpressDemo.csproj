@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8484DE03-9194-4B87-9335-6D3C9E3350F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImagXpressDemo</RootNamespace>
+    <AssemblyName>ImagXpressDemo</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accusoft.ImagXpress13.Net">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Components\DotNet\Accusoft.ImagXpress13.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Accusoft.ISISXpress7.Net">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ISISXpress\V7.0\Components\DotNet\Accusoft.ISISXpress7.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Accusoft.NotateXpress13.Net">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\NotateXpress\V13.0\Components\DotNet\Accusoft.NotateXpress13.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Accusoft.PrintPro8.Net">
+      <HintPath>..\..\..\..\..\..\..\PrintPro\V8.0\Components\DotNet\Accusoft.PrintPro8.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Accusoft.ThumbnailXpress6.Net">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ThumbnailXpress\V6.0\Components\DotNet\Accusoft.ThumbnailXpress6.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Accusoft.TwainPro9.Net">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\TwainPRO\V9.0\Components\DotNet\Accusoft.TwainPro9.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Metadata Forms\CommentsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metadata Forms\CommentsListForm.Designer.cs">
+      <DependentUpon>CommentsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata Forms\CommentsTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metadata Forms\CommentsTextForm.Designer.cs">
+      <DependentUpon>CommentsTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Metadata Forms\CommentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metadata Forms\CommentsForm.Designer.cs">
+      <DependentUpon>CommentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="HistogramForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistogramForm.Designer.cs">
+      <DependentUpon>HistogramForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageInfoForm.Designer.cs">
+      <DependentUpon>ImageInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata Forms\MetadataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metadata Forms\MetadataForm.Designer.cs">
+      <DependentUpon>MetadataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scan Forms\IsisScanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scan Forms\IsisScanForm.Designer.cs">
+      <DependentUpon>IsisScanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsCadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsCadForm.Designer.cs">
+      <DependentUpon>OpenOptionsCadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsJbig2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsJbig2Form.Designer.cs">
+      <DependentUpon>OpenOptionsJbig2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsJpegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsJpegForm.Designer.cs">
+      <DependentUpon>OpenOptionsJpegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsJpegXRForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsJpegXRForm.Designer.cs">
+      <DependentUpon>OpenOptionsJpegXRForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptions.Designer.cs">
+      <DependentUpon>OpenOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsCameraRawForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsCameraRawForm.Designer.cs">
+      <DependentUpon>OpenOptionsCameraRawForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsMetafileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsMetafileForm.Designer.cs">
+      <DependentUpon>OpenOptionsMetafileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsPicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsPicForm.Designer.cs">
+      <DependentUpon>OpenOptionsPicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsTiffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open Options Forms\OpenOptionsTiffForm.Designer.cs">
+      <DependentUpon>OpenOptionsTiffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\AdjustForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\AdjustForm.Designer.cs">
+      <DependentUpon>AdjustForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\AlphaFlattenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\AlphaFlattenForm.Designer.cs">
+      <DependentUpon>AlphaFlattenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\AlphaReduceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\AlphaReduceForm.Designer.cs">
+      <DependentUpon>AlphaReduceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\BinarizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\BinarizeForm.Designer.cs">
+      <DependentUpon>BinarizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\BlobRemovalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\BlobRemovalForm.Designer.cs">
+      <DependentUpon>BlobRemovalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\DeskewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\DeskewForm.Designer.cs">
+      <DependentUpon>DeskewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\DoubleIntensityAndSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\DoubleIntensityAndSelectionForm.Designer.cs">
+      <DependentUpon>DoubleIntensityAndSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\LineRemovalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\LineRemovalForm.Designer.cs">
+      <DependentUpon>LineRemovalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\MatrixForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\MatrixForm.Designer.cs">
+      <DependentUpon>MatrixForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\MergeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\MergeForm.Designer.cs">
+      <DependentUpon>MergeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\PolynomialWarpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\PolynomialWarpForm.Designer.cs">
+      <DependentUpon>PolynomialWarpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\RemoveRedEyeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\RemoveRedEyeForm.Designer.cs">
+      <DependentUpon>RemoveRedEyeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\IntensityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\IntensityForm.Designer.cs">
+      <DependentUpon>IntensityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\ColorDepthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\ColorDepthForm.Designer.cs">
+      <DependentUpon>ColorDepthForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\ColorSeparationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\ColorSeparationForm.Designer.cs">
+      <DependentUpon>ColorSeparationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\CropBorderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\CropBorderForm.Designer.cs">
+      <DependentUpon>CropBorderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\CropForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\CropForm.Designer.cs">
+      <DependentUpon>CropForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\SkewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\SkewForm.Designer.cs">
+      <DependentUpon>SkewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\ProcessingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\ProcessingForm.Designer.cs">
+      <DependentUpon>ProcessingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\RemoveDefectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\RemoveDefectForm.Designer.cs">
+      <DependentUpon>RemoveDefectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\ReplaceColorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\ReplaceColorsForm.Designer.cs">
+      <DependentUpon>ReplaceColorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\ResizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\ResizeForm.Designer.cs">
+      <DependentUpon>ResizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\IntensityAndSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\IntensityAndSelectionForm.Designer.cs">
+      <DependentUpon>IntensityAndSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing Forms\MotionBlurForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing Forms\MotionBlurForm.Designer.cs">
+      <DependentUpon>MotionBlurForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Save Options Forms\SaveOptionsBmpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsBmpForm.Designer.cs">
+      <DependentUpon>SaveOptionsBmpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsDcxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsDcxForm.Designer.cs">
+      <DependentUpon>SaveOptionsDcxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsExifForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsExifForm.Designer.cs">
+      <DependentUpon>SaveOptionsExifForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsForm.Designer.cs">
+      <DependentUpon>SaveOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsGifForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsGifForm.Designer.cs">
+      <DependentUpon>SaveOptionsGifForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsIconForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsIconForm.Designer.cs">
+      <DependentUpon>SaveOptionsIconForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsJbig2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsJbig2Form.Designer.cs">
+      <DependentUpon>SaveOptionsJbig2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsJlsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsJlsForm.Designer.cs">
+      <DependentUpon>SaveOptionsJlsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsJpeg2000Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsJpeg2000Form.Designer.cs">
+      <DependentUpon>SaveOptionsJpeg2000Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsJpegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsJpegForm.Designer.cs">
+      <DependentUpon>SaveOptionsJpegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsJpegXRForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsJpegXRForm.Designer.cs">
+      <DependentUpon>SaveOptionsJpegXRForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsLjpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsLjpForm.Designer.cs">
+      <DependentUpon>SaveOptionsLjpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsModcaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsModcaForm.Designer.cs">
+      <DependentUpon>SaveOptionsModcaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsPicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsPicForm.Designer.cs">
+      <DependentUpon>SaveOptionsPicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsPngForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsPngForm.Designer.cs">
+      <DependentUpon>SaveOptionsPngForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsTifForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsTifForm.Designer.cs">
+      <DependentUpon>SaveOptionsTifForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsWsqForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save Options Forms\SaveOptionsWsqForm.Designer.cs">
+      <DependentUpon>SaveOptionsWsqForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SlideShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlideShowForm.Designer.cs">
+      <DependentUpon>SlideShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scan Forms\ScanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scan Forms\ScanForm.Designer.cs">
+      <DependentUpon>ScanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scan Forms\TwainScanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scan Forms\TwainScanForm.Designer.cs">
+      <DependentUpon>TwainScanForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Metadata Forms\CommentsForm.resx">
+      <DependentUpon>CommentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metadata Forms\CommentsListForm.resx">
+      <DependentUpon>CommentsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metadata Forms\CommentsTextForm.resx">
+      <DependentUpon>CommentsTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistogramForm.resx">
+      <DependentUpon>HistogramForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageInfoForm.resx">
+      <DependentUpon>ImageInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metadata Forms\MetadataForm.resx">
+      <DependentUpon>MetadataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scan Forms\IsisScanForm.resx">
+      <DependentUpon>IsisScanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open Options Forms\OpenOptionsCadForm.resx">
+      <DependentUpon>OpenOptionsCadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open Options Forms\OpenOptionsCameraRawForm.resx">
+      <DependentUpon>OpenOptionsCameraRawForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open Options Forms\OpenOptionsJbig2Form.resx">
+      <DependentUpon>OpenOptionsJbig2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open Options Forms\OpenOptionsJpegForm.resx">
+      <DependentUpon>OpenOptionsJpegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open Options Forms\OpenOptions.resx">
+      <DependentUpon>OpenOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open Options Forms\OpenOptionsJpegXRForm.resx">
+      <DependentUpon>OpenOptionsJpegXRForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open Options Forms\OpenOptionsMetafileForm.resx">
+      <DependentUpon>OpenOptionsMetafileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open Options Forms\OpenOptionsPicForm.resx">
+      <DependentUpon>OpenOptionsPicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open Options Forms\OpenOptionsTiffForm.resx">
+      <DependentUpon>OpenOptionsTiffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\AdjustForm.resx">
+      <DependentUpon>AdjustForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\AlphaFlattenForm.resx">
+      <DependentUpon>AlphaFlattenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\AlphaReduceForm.resx">
+      <DependentUpon>AlphaReduceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\BinarizeForm.resx">
+      <DependentUpon>BinarizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\BlobRemovalForm.resx">
+      <DependentUpon>BlobRemovalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\DeskewForm.resx">
+      <DependentUpon>DeskewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\DoubleIntensityAndSelectionForm.resx">
+      <DependentUpon>DoubleIntensityAndSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\LineRemovalForm.resx">
+      <DependentUpon>LineRemovalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\MatrixForm.resx">
+      <DependentUpon>MatrixForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\MergeForm.resx">
+      <DependentUpon>MergeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\PolynomialWarpForm.resx">
+      <DependentUpon>PolynomialWarpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\RemoveRedEyeForm.resx">
+      <DependentUpon>RemoveRedEyeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\IntensityForm.resx">
+      <DependentUpon>IntensityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\ColorDepthForm.resx">
+      <DependentUpon>ColorDepthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\ColorSeparationForm.resx">
+      <DependentUpon>ColorSeparationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\CropBorderForm.resx">
+      <DependentUpon>CropBorderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\CropForm.resx">
+      <DependentUpon>CropForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\SkewForm.resx">
+      <DependentUpon>SkewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\ProcessingForm.resx">
+      <DependentUpon>ProcessingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\RemoveDefectForm.resx">
+      <DependentUpon>RemoveDefectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\ReplaceColorsForm.resx">
+      <DependentUpon>ReplaceColorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\ResizeForm.resx">
+      <DependentUpon>ResizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\IntensityAndSelectionForm.resx">
+      <DependentUpon>IntensityAndSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing Forms\MotionBlurForm.resx">
+      <DependentUpon>MotionBlurForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsBmpForm.resx">
+      <DependentUpon>SaveOptionsBmpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsDcxForm.resx">
+      <DependentUpon>SaveOptionsDcxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsExifForm.resx">
+      <DependentUpon>SaveOptionsExifForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsForm.resx">
+      <DependentUpon>SaveOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsGifForm.resx">
+      <DependentUpon>SaveOptionsGifForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsIconForm.resx">
+      <DependentUpon>SaveOptionsIconForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsJbig2Form.resx">
+      <DependentUpon>SaveOptionsJbig2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsJlsForm.resx">
+      <DependentUpon>SaveOptionsJlsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsJpeg2000Form.resx">
+      <DependentUpon>SaveOptionsJpeg2000Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsJpegForm.resx">
+      <DependentUpon>SaveOptionsJpegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsJpegXRForm.resx">
+      <DependentUpon>SaveOptionsJpegXRForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsLjpForm.resx">
+      <DependentUpon>SaveOptionsLjpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsModcaForm.resx">
+      <DependentUpon>SaveOptionsModcaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsPicForm.resx">
+      <DependentUpon>SaveOptionsPicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsPngForm.resx">
+      <DependentUpon>SaveOptionsPngForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsTifForm.resx">
+      <DependentUpon>SaveOptionsTifForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save Options Forms\SaveOptionsWsqForm.resx">
+      <DependentUpon>SaveOptionsWsqForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlideShowForm.resx">
+      <DependentUpon>SlideShowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scan Forms\ScanForm.resx">
+      <DependentUpon>ScanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scan Forms\TwainScanForm.resx">
+      <DependentUpon>TwainScanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash.bmp" />
+    <Content Include="Toolbar Images\Annotations\Button.bmp" />
+    <Content Include="Toolbar Images\Annotations\Ellipse.bmp" />
+    <Content Include="Toolbar Images\Annotations\Freehand.bmp" />
+    <Content Include="Toolbar Images\Annotations\Highlight.bmp" />
+    <Content Include="Toolbar Images\Annotations\Image.bmp" />
+    <Content Include="Toolbar Images\Annotations\Line.bmp" />
+    <Content Include="Toolbar Images\Annotations\Note.bmp" />
+    <Content Include="Toolbar Images\Annotations\Polygon.bmp" />
+    <Content Include="Toolbar Images\Annotations\Polyline.bmp" />
+    <Content Include="Toolbar Images\Annotations\Protractor.bmp" />
+    <Content Include="Toolbar Images\Annotations\Rectangle.bmp" />
+    <Content Include="Toolbar Images\Annotations\Ruler.bmp" />
+    <Content Include="Toolbar Images\Annotations\Stamp.bmp" />
+    <Content Include="Toolbar Images\Annotations\Text.bmp" />
+    <Content Include="Toolbar Images\Back.png" />
+    <Content Include="Toolbar Images\Forward.png" />
+    <Content Include="Toolbar Images\Help.png" />
+    <Content Include="Toolbar Images\Home.png" />
+    <Content Include="Toolbar Images\Magnify.bmp" />
+    <Content Include="Toolbar Images\Open.png" />
+    <Content Include="Toolbar Images\Pan.bmp" />
+    <Content Include="Toolbar Images\Pointer.bmp" />
+    <Content Include="Toolbar Images\Print.png" />
+    <Content Include="Toolbar Images\Save.png" />
+    <Content Include="Toolbar Images\Scanner.png" />
+    <Content Include="Toolbar Images\Selection.bmp" />
+    <Content Include="Toolbar Images\ZoomIn.bmp" />
+    <Content Include="Toolbar Images\ZoomOut.bmp" />
+    <Content Include="Toolbar Images\ZoomRect.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

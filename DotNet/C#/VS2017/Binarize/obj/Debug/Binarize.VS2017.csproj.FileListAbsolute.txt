@@ -1,0 +1,8 @@
+C:\Users\Public\Documents\Accusoft\ImagXpress\V13.0\Samples\DotNet\C#\VS2017\Binarize\bin\AnyCPU\Debug\Binarize.exe
+C:\Users\Public\Documents\Accusoft\ImagXpress\V13.0\Samples\DotNet\C#\VS2017\Binarize\bin\AnyCPU\Debug\Binarize.pdb
+C:\Users\Public\Documents\Accusoft\ImagXpress\V13.0\Samples\DotNet\C#\VS2017\Binarize\bin\AnyCPU\Debug\Accusoft.ImagXpress13.Net.dll
+C:\Users\Public\Documents\Accusoft\ImagXpress\V13.0\Samples\DotNet\C#\VS2017\Binarize\obj\Debug\Binarize.VS2017.csprojResolveAssemblyReference.cache
+C:\Users\Public\Documents\Accusoft\ImagXpress\V13.0\Samples\DotNet\C#\VS2017\Binarize\obj\Debug\Binarize.MainForm.resources
+C:\Users\Public\Documents\Accusoft\ImagXpress\V13.0\Samples\DotNet\C#\VS2017\Binarize\obj\Debug\Binarize.VS2017.csproj.GenerateResource.Cache
+C:\Users\Public\Documents\Accusoft\ImagXpress\V13.0\Samples\DotNet\C#\VS2017\Binarize\obj\Debug\Binarize.exe
+C:\Users\Public\Documents\Accusoft\ImagXpress\V13.0\Samples\DotNet\C#\VS2017\Binarize\obj\Debug\Binarize.pdb

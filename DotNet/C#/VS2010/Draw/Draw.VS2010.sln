@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draw.VS2010", "Draw.VS2010.csproj", "{9E523C96-8368-4E6F-9D09-9ACB6972899B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E523C96-8368-4E6F-9D09-9ACB6972899B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E523C96-8368-4E6F-9D09-9ACB6972899B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E523C96-8368-4E6F-9D09-9ACB6972899B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E523C96-8368-4E6F-9D09-9ACB6972899B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
